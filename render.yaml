@@ -1,0 +1,7 @@
+﻿services:
+  - type: web
+    name: chipzone-cr
+    env: docker
+    plan: free
+    region: ohio
+    branch: main
