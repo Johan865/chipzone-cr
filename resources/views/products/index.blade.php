@@ -45,8 +45,8 @@
         <div class="row row-cols-2 row-cols-md-3 g-3">
             @forelse($products as $product)
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <img src="{{ $product->image_url }}" class="card-img-top" alt="{{ $product->name }}">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="{{ $product->image_url }}" class="card-img-top rounded-top" alt="{{ $product->name }}" style="height: 200px; object-fit: cover;">
                         <div class="card-body d-flex flex-column">
                             <h3 class="h6"><a href="{{ route('products.show', $product) }}" class="text-decoration-none text-dark">{{ $product->name }}</a></h3>
                             <p class="fw-bold mt-auto mb-2">₡{{ number_format($product->price, 0) }}</p>
