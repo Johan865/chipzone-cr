@@ -18,6 +18,19 @@ class Product extends Model
         ];
     }
 
+    public function getImageUrlAttribute(?string $value): string
+    {
+        if (empty($value)) {
+            return 'https://images.unsplash.com/photo-1526738549149-8e07eca6c147?q=80&w=600&auto=format&fit=crop';
+        }
+
+        if (str_starts_with($value, 'http://') || str_starts_with($value, 'https://')) {
+            return $value;
+        }
+
+        return asset($value);
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);
