@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 namespace Database\Seeders;
 
@@ -20,11 +20,11 @@ class ProductSeeder extends Seeder
             ['cat' => 'Laptops', 'name' => 'UltraBook Air 14"', 'price' => 549900, 'stock' => 10, 'img' => 'https://images.unsplash.com/photo-1531297172868-9f1d1b5377f7?q=80&w=400&h=400&fit=crop'],
             ['cat' => 'Laptops', 'name' => 'GamerPro RTX Edition', 'price' => 899900, 'stock' => 6, 'img' => 'https://images.unsplash.com/photo-1600861194942-f883de0dfe96?q=80&w=400&h=400&fit=crop'],
             ['cat' => 'Laptops', 'name' => 'ChromeLite 11"', 'price' => 189900, 'stock' => 20, 'img' => 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=400&h=400&fit=crop'],
-            ['cat' => 'Audio', 'name' => 'Audífonos NoiseCancel Pro', 'price' => 79900, 'stock' => 40, 'img' => 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&h=400&fit=crop'],
+            ['cat' => 'Audio', 'name' => 'Audifonos NoiseCancel Pro', 'price' => 79900, 'stock' => 40, 'img' => 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=400&h=400&fit=crop'],
             ['cat' => 'Audio', 'name' => 'Parlante Bluetooth BoomBox', 'price' => 45900, 'stock' => 30, 'img' => 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?q=80&w=400&h=400&fit=crop'],
             ['cat' => 'Gaming', 'name' => 'Consola PlayXtreme 5', 'price' => 349900, 'stock' => 12, 'img' => 'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=400&h=400&fit=crop'],
-            ['cat' => 'Gaming', 'name' => 'Control Inalámbrico Pro', 'price' => 32900, 'stock' => 50, 'img' => 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=400&h=400&fit=crop'],
-            ['cat' => 'Accesorios', 'name' => 'Cargador Rápido 65W', 'price' => 14900, 'stock' => 80, 'img' => 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&h=400&fit=crop'],
+            ['cat' => 'Gaming', 'name' => 'Control Inalambrico Pro', 'price' => 32900, 'stock' => 50, 'img' => 'https://images.unsplash.com/photo-1593305841991-05c297ba4575?q=80&w=400&h=400&fit=crop'],
+            ['cat' => 'Accesorios', 'name' => 'Cargador Rapido 65W', 'price' => 14900, 'stock' => 80, 'img' => 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=400&h=400&fit=crop'],
             ['cat' => 'Accesorios', 'name' => 'Power Bank 20000mAh', 'price' => 24900, 'stock' => 60, 'img' => 'https://images.unsplash.com/photo-1609081524932-9dae1539a738?q=80&w=400&h=400&fit=crop'],
         ];
 
@@ -34,7 +34,7 @@ class ProductSeeder extends Seeder
                 [
                     'category_id' => $catId($p['cat']),
                     'name' => $p['name'],
-                    'description' => "Descripción de ejemplo para {$p['name']}. Editar con las especificaciones reales del producto.",
+                    'description' => "Descripcion de ejemplo para {$p['name']}.",
                     'price' => $p['price'],
                     'stock' => $p['stock'],
                     'image_url' => $p['img'],
