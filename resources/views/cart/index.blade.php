@@ -21,7 +21,16 @@
             <tbody>
                 @foreach($cart->items as $item)
                     <tr>
-                        <td>{{ $item->product->name }}</td>
+                        <td>
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="{{ $item->product->image_url }}" alt="{{ $item->product->name }}" class="rounded shadow-sm" style="width: 50px; height: 50px; object-fit: cover;">
+                                <div>
+                                    <a href="{{ route('products.show', $item->product) }}" class="text-decoration-none text-dark fw-semibold">
+                                        {{ $item->product->name }}
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
                         <td>₡{{ number_format($item->product->price, 0) }}</td>
                         <td style="width:120px">
                             <form method="POST" action="{{ route('cart.update', $item) }}" class="d-flex gap-1">

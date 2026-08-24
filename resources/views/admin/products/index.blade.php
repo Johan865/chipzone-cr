@@ -19,7 +19,12 @@
         <tbody>
             @foreach($products as $product)
                 <tr>
-                    <td>{{ $product->name }}</td>
+                    <td>
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="{{ $product->image_url }}" alt="{{ $product->name }}" class="rounded" style="width: 40px; height: 40px; object-fit: cover;">
+                            <span class="fw-semibold">{{ $product->name }}</span>
+                        </div>
+                    </td>
                     <td>{{ $product->category->name }}</td>
                     <td>₡{{ number_format($product->price, 0) }}</td>
                     <td>{{ $product->stock }}</td>
