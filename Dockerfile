@@ -1,4 +1,4 @@
-FROM php:8.2-cli
+﻿FROM php:8.2-cli
 
 RUN apt-get update && apt-get install -y \
     git unzip libsqlite3-dev libzip-dev zip \
@@ -10,6 +10,7 @@ WORKDIR /var/www/html
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader --no-interaction
+RUN cp .env.example .env
 
 RUN touch database/database.sqlite
 
