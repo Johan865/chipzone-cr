@@ -79,7 +79,7 @@ class ProductSeeder extends Seeder
                 'description' => 'La laptop empresarial por excelencia: ultraliviana en fibra de carbono, durabilidad de grado militar MIL-STD-810H y seguridad ThinkShield.',
                 'price' => 850000,
                 'stock' => 9,
-                'img' => 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?q=80&w=800&auto=format&fit=crop',
+                'img' => 'https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=800&auto=format&fit=crop',
             ],
 
             // ================= AUDIO =================
@@ -136,10 +136,10 @@ class ProductSeeder extends Seeder
             [
                 'cat' => 'Gaming',
                 'name' => 'Control Inalámbrico Sony DualSense PS5 Midnight Black',
-                'description' => 'Gatillos adaptativos dinámicos, retroalimentación háptica inmersiva, micrófono integrado y botón Crear en un diseño ergonómico.',
+                'description' => 'Gatillos adaptativos dinámicos, retroalimentación háptica inmersiva, micrófono integrado y botón Crear en un diseño ergonómico color negro medianoche.',
                 'price' => 44900,
                 'stock' => 50,
-                'img' => 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=800&auto=format&fit=crop',
+                'img' => 'https://images.unsplash.com/photo-1592840496694-26d035b52b48?q=80&w=800&auto=format&fit=crop',
             ],
             [
                 'cat' => 'Gaming',
@@ -165,7 +165,7 @@ class ProductSeeder extends Seeder
                 'description' => 'Power Bank de alta potencia con pantalla digital inteligente, recarga bidireccional ultrarrápida y capacidad para cargar una laptop completa.',
                 'price' => 65000,
                 'stock' => 40,
-                'img' => 'https://images.unsplash.com/photo-1609081524932-9dae1539a738?q=80&w=800&auto=format&fit=crop',
+                'img' => 'https://images.unsplash.com/photo-1622445262464-84b1456045b6?q=80&w=800&auto=format&fit=crop',
             ],
             [
                 'cat' => 'Accesorios',
